@@ -88,7 +88,7 @@ if (GSL_CONFIG)
    set(GSL_CXX_FLAGS ${GSL_CXX_FLAGS} CACHE STRING INTERNAL)
    set(GSL_LIBRARIES ${GSL_LIBRARIES} CACHE STRING INTERNAL)
 else(GSL_CONFIG)
-  message ("GSL not found. Some parts of the code will not be compiled.")
+  message(FATAL_ERROR "GSL not found!")
 endif(GSL_CONFIG)
 
 # NNAD
