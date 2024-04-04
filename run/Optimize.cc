@@ -215,11 +215,6 @@ int main(int argc, char *argv[])
       // unfluctuated data set.
       NangaParbat::DataHandler *DHc = new NangaParbat::DataHandler{ds["name"].as<std::string>(), YAML::LoadFile(DataFolder + ds["file"].as<std::string>())};
 
-      // Check whether the hadronic species set in the configuration
-      // card matches with that of the data set.
-      //if (DH->GetHadron() != hadron)
-      //  throw std::runtime_error("This data set corresponds to a hadronic species different from that set in the input configuration card");
-
       // Accumulate kinematic cuts
       std::vector<std::shared_ptr<NangaParbat::Cut> > cuts;
       for (auto const &c : ds["cuts"])
@@ -237,9 +232,10 @@ int main(int argc, char *argv[])
       NangaParbat::TrainingCut *ValidationCut = new NangaParbat::TrainingCut{*TrainingCut, true, cuts};
 
       // Push back DataHandler-PredictionHandler pair of objects using
-      // the DH and PH objects defined above (tables are not recomputed)
-      // for the total dataset (used at the end of the fit to compute
-      // the optimal chi2) and the training and validation subsets.
+      // the DH and PH objects defined above (tables are not
+      // recomputed) for the total dataset (used at the end of the fit
+      // to compute the optimal chi2) and the training and validation
+      // subsets.
       DSVect.push_back(std::make_pair(DHc, new Denali::PredictionsHandler{PH}));
       DSVectt.push_back(std::make_pair(DH, new Denali::PredictionsHandler{PH, {std::shared_ptr<NangaParbat::Cut>(new NangaParbat::TrainingCut{*TrainingCut})}}));
       DSVectv.push_back(std::make_pair(DH, new Denali::PredictionsHandler{PH, {std::shared_ptr<NangaParbat::Cut>(new NangaParbat::TrainingCut{*ValidationCut})}}));

@@ -27,23 +27,23 @@ namespace Denali
     // the number of parametrised flavours
     switch (_FlavourMap)
       {
-        case 0: // s != sbar
-          if (_NNarchitecture.back() != 7)
-            {
-              std::cerr << "NNAD : The output layer must contain 7 nodes." << std::endl;
-              exit(-1);
-            }
-            break;
-        case 1: // s = sbar
-          if (_NNarchitecture.back() != 6)
-            {
-              std::cerr << "NNAD : The output layer must contain 6 nodes." << std::endl;
-              exit(-1);
-            }
-            break;
-        default:
-          std::cerr << "NNAD : Unknown flavour map" << std::endl;
-          exit(-1);
+      case 0: // s != sbar
+        if (_NNarchitecture.back() != 7)
+          {
+            std::cerr << "NNAD : The output layer must contain 7 nodes." << std::endl;
+            exit(-1);
+          }
+        break;
+      case 1: // s = sbar
+        if (_NNarchitecture.back() != 6)
+          {
+            std::cerr << "NNAD : The output layer must contain 6 nodes." << std::endl;
+            exit(-1);
+          }
+        break;
+      default:
+        std::cerr << "NNAD : Unknown flavour map" << std::endl;
+        exit(-1);
       }
 
     // Allocate unpolarised PDFs on grid
@@ -84,25 +84,25 @@ namespace Denali
       std::vector<double> nnx(13, 0.);
       switch (_FlavourMap)
         {
-          case 0: // sbar != s
-            nnx[3] = fnnx[0]; // sbar
-            nnx[4] = fnnx[1]; // ubar
-            nnx[5] = fnnx[2]; // dbar
-            nnx[6] = fnnx[3]; // g
-            nnx[7] = fnnx[4]; // d
-            nnx[8] = fnnx[5]; // u
-            nnx[9] = fnnx[6]; // s
-            break;
+        case 0: // sbar != s
+          nnx[3] = fnnx[0]; // sbar
+          nnx[4] = fnnx[1]; // ubar
+          nnx[5] = fnnx[2]; // dbar
+          nnx[6] = fnnx[3]; // g
+          nnx[7] = fnnx[4]; // d
+          nnx[8] = fnnx[5]; // u
+          nnx[9] = fnnx[6]; // s
+          break;
 
-          case 1: // sbar = s
-            nnx[3] = fnnx[0]; // sbar
-            nnx[4] = fnnx[1]; // ubar
-            nnx[5] = fnnx[2]; // dbar
-            nnx[6] = fnnx[3]; // g
-            nnx[7] = fnnx[4]; // d
-            nnx[8] = fnnx[5]; // u
-            nnx[9] = fnnx[0]; // s
-            break;
+        case 1: // sbar = s
+          nnx[3] = fnnx[0]; // sbar
+          nnx[4] = fnnx[1]; // ubar
+          nnx[5] = fnnx[2]; // dbar
+          nnx[6] = fnnx[3]; // g
+          nnx[7] = fnnx[4]; // d
+          nnx[8] = fnnx[5]; // u
+          nnx[9] = fnnx[0]; // s
+          break;
         }
 
       // Zip indices and NN into a map
@@ -153,7 +153,7 @@ namespace Denali
           // bbar = t = tbar = 0.
           std::vector<double> nnx(13, 0.);
           switch (_FlavourMap)
-           {
+            {
             case 0: // s != sbar
               nnx[3] = dnnx[0 + ip * _Nout]; // sbar
               nnx[4] = dnnx[1 + ip * _Nout]; // ubar
@@ -173,7 +173,7 @@ namespace Denali
               nnx[8] = dnnx[5 + ip * _Nout]; // u
               nnx[9] = dnnx[0 + ip * _Nout]; // s
               break;
-           }
+            }
 
           // Zip indices and NN into a map
           std::map<int, double> nnxMapPhys;

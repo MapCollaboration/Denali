@@ -8,7 +8,6 @@
 
 In order for the code to pe compiled, the following dependencies need to be preinstalled:
 
-- [`MontBlanc`](https://github.com/MapCollaboration/MontBlanc)
 - [`NangaParbat`](https://github.com/MapCollaboration/NangaParbat)
 - [`apfelxx`](https://github.com/vbertone/apfelxx)
 - [`NNAD`](https://github.com/rabah-khalek/NNAD)

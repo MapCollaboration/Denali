@@ -58,10 +58,10 @@ int main(int argc, char *argv[])
     {
       Nmembers = std::stoi(argv[3]);
       if (Nmembers <= 0)
-	{
-	  std::cout << "Number of availablereplicas = " << AllPars.size() << std::endl;
-	  exit(-1);
-	}
+        {
+          std::cout << "Number of availablereplicas = " << AllPars.size() << std::endl;
+          exit(-1);
+        }
       std::cout << "Nmembers requested = " << Nmembers << std::endl;
     }
   else
@@ -120,23 +120,23 @@ int main(int argc, char *argv[])
   // the number of parametrised flavours
   switch (FlavourMap)
     {
-      case 0: // s != sbar
-        if (Architecture.back() != 7)
-          {
-            std::cerr << "NNAD : The output layer must contain 7 nodes." << std::endl;
-            exit(-1);
-          }
-          break;
-      case 1: // s = sbar
-        if (Architecture.back() != 6)
-          {
-            std::cerr << "NNAD : The output layer must contain 6 nodes." << std::endl;
-            exit(-1);
-          }
-          break;
-      default:
-        std::cerr << "NNAD : Unknown flavour map" << std::endl;
-        exit(-1);
+    case 0: // s != sbar
+      if (Architecture.back() != 7)
+        {
+          std::cerr << "NNAD : The output layer must contain 7 nodes." << std::endl;
+          exit(-1);
+        }
+      break;
+    case 1: // s = sbar
+      if (Architecture.back() != 6)
+        {
+          std::cerr << "NNAD : The output layer must contain 6 nodes." << std::endl;
+          exit(-1);
+        }
+      break;
+    default:
+      std::cerr << "NNAD : Unknown flavour map" << std::endl;
+      exit(-1);
     }
 
   // NN Parameterisation. First compute the average.
@@ -172,29 +172,29 @@ int main(int argc, char *argv[])
           // Construct PDFs
           switch (FlavourMap)
             {
-              case 0: // s != sbar
-                PhysMap[-3] += ( 2 * nnx[0] - 1 ) * (std::abs(xf.at(-3)) + Std.at(-3)) / nr;
-                PhysMap[-2] += ( 2 * nnx[1] - 1 ) * (std::abs(xf.at(-2)) + Std.at(-2)) / nr;
-                PhysMap[-1] += ( 2 * nnx[2] - 1 ) * (std::abs(xf.at(-1)) + Std.at(-1)) / nr;
-                PhysMap[0]  += ( 2 * nnx[3] - 1 ) * (std::abs(xf.at(21)) + Std.at(21)) / nr;
-                PhysMap[1]  += ( 2 * nnx[4] - 1 ) * (std::abs(xf.at(1)) + Std.at(1))  / nr;
-                PhysMap[2]  += ( 2 * nnx[5] - 1 ) * (std::abs(xf.at(2)) + Std.at(2))  / nr;
-                PhysMap[3]  += ( 2 * nnx[6] - 1 ) * (std::abs(xf.at(3)) + Std.at(3))  / nr;
-                break;
+            case 0: // s != sbar
+              PhysMap[-3] += ( 2 * nnx[0] - 1 ) * (std::abs(xf.at(-3)) + Std.at(-3)) / nr;
+              PhysMap[-2] += ( 2 * nnx[1] - 1 ) * (std::abs(xf.at(-2)) + Std.at(-2)) / nr;
+              PhysMap[-1] += ( 2 * nnx[2] - 1 ) * (std::abs(xf.at(-1)) + Std.at(-1)) / nr;
+              PhysMap[0]  += ( 2 * nnx[3] - 1 ) * (std::abs(xf.at(21)) + Std.at(21)) / nr;
+              PhysMap[1]  += ( 2 * nnx[4] - 1 ) * (std::abs(xf.at(1)) + Std.at(1))  / nr;
+              PhysMap[2]  += ( 2 * nnx[5] - 1 ) * (std::abs(xf.at(2)) + Std.at(2))  / nr;
+              PhysMap[3]  += ( 2 * nnx[6] - 1 ) * (std::abs(xf.at(3)) + Std.at(3))  / nr;
+              break;
 
-              case 1: // s = sbar
-                PhysMap[-3] += ( 2 * nnx[0] - 1 ) * (std::abs(xf.at(3)) + Std.at(3)) / nr;
-                PhysMap[-2] += ( 2 * nnx[1] - 1 ) * (std::abs(xf.at(-2)) + Std.at(-2)) / nr;
-                PhysMap[-1] += ( 2 * nnx[2] - 1 ) * (std::abs(xf.at(-1)) + Std.at(-1)) / nr;
-                PhysMap[0]  += ( 2 * nnx[3] - 1 ) * (std::abs(xf.at(21)) + Std.at(21)) / nr;
-                PhysMap[1]  += ( 2 * nnx[4] - 1 ) * (std::abs(xf.at(1)) + Std.at(1))  / nr;
-                PhysMap[2]  += ( 2 * nnx[5] - 1 ) * (std::abs(xf.at(2)) + Std.at(2))  / nr;
-                PhysMap[3]  += ( 2 * nnx[0] - 1 ) * (std::abs(xf.at(3)) + Std.at(3))  / nr;
-                break;
+            case 1: // s = sbar
+              PhysMap[-3] += ( 2 * nnx[0] - 1 ) * (std::abs(xf.at(3)) + Std.at(3)) / nr;
+              PhysMap[-2] += ( 2 * nnx[1] - 1 ) * (std::abs(xf.at(-2)) + Std.at(-2)) / nr;
+              PhysMap[-1] += ( 2 * nnx[2] - 1 ) * (std::abs(xf.at(-1)) + Std.at(-1)) / nr;
+              PhysMap[0]  += ( 2 * nnx[3] - 1 ) * (std::abs(xf.at(21)) + Std.at(21)) / nr;
+              PhysMap[1]  += ( 2 * nnx[4] - 1 ) * (std::abs(xf.at(1)) + Std.at(1))  / nr;
+              PhysMap[2]  += ( 2 * nnx[5] - 1 ) * (std::abs(xf.at(2)) + Std.at(2))  / nr;
+              PhysMap[3]  += ( 2 * nnx[0] - 1 ) * (std::abs(xf.at(3)) + Std.at(3))  / nr;
+              break;
 
-              default:
-                std::cerr << "NNAD : Unknown flavour map" << std::endl;
-                exit(-1);
+            default:
+              std::cerr << "NNAD : Unknown flavour map" << std::endl;
+              exit(-1);
             }
         }
 
@@ -230,29 +230,29 @@ int main(int argc, char *argv[])
         // Construct PDFs
         switch (FlavourMap)
           {
-            case 0: // s != sbar
-              PhysMap[-3] += ( 2 * nnx[0] - 1 ) * (std::abs(xf.at(-3)) + Std.at(-3));
-              PhysMap[-2] += ( 2 * nnx[1] - 1 ) * (std::abs(xf.at(-2)) + Std.at(-2));
-              PhysMap[-1] += ( 2 * nnx[2] - 1 ) * (std::abs(xf.at(-1)) + Std.at(-1));
-              PhysMap[0]  += ( 2 * nnx[3] - 1 ) * (std::abs(xf.at(21)) + Std.at(21));
-              PhysMap[1]  += ( 2 * nnx[4] - 1 ) * (std::abs(xf.at(1)) + Std.at(1));
-              PhysMap[2]  += ( 2 * nnx[5] - 1 ) * (std::abs(xf.at(2)) + Std.at(2));
-              PhysMap[3]  += ( 2 * nnx[6] - 1 ) * (std::abs(xf.at(3)) + Std.at(3));
-              break;
+          case 0: // s != sbar
+            PhysMap[-3] += ( 2 * nnx[0] - 1 ) * (std::abs(xf.at(-3)) + Std.at(-3));
+            PhysMap[-2] += ( 2 * nnx[1] - 1 ) * (std::abs(xf.at(-2)) + Std.at(-2));
+            PhysMap[-1] += ( 2 * nnx[2] - 1 ) * (std::abs(xf.at(-1)) + Std.at(-1));
+            PhysMap[0]  += ( 2 * nnx[3] - 1 ) * (std::abs(xf.at(21)) + Std.at(21));
+            PhysMap[1]  += ( 2 * nnx[4] - 1 ) * (std::abs(xf.at(1)) + Std.at(1));
+            PhysMap[2]  += ( 2 * nnx[5] - 1 ) * (std::abs(xf.at(2)) + Std.at(2));
+            PhysMap[3]  += ( 2 * nnx[6] - 1 ) * (std::abs(xf.at(3)) + Std.at(3));
+            break;
 
-            case 1: // s = sbar
-              PhysMap[-3] += ( 2 * nnx[0] - 1 ) * (std::abs(xf.at(3)) + Std.at(3));
-              PhysMap[-2] += ( 2 * nnx[1] - 1 ) * (std::abs(xf.at(-2)) + Std.at(-2));
-              PhysMap[-1] += ( 2 * nnx[2] - 1 ) * (std::abs(xf.at(-1)) + Std.at(-1));
-              PhysMap[0]  += ( 2 * nnx[3] - 1 ) * (std::abs(xf.at(21)) + Std.at(21));
-              PhysMap[1]  += ( 2 * nnx[4] - 1 ) * (std::abs(xf.at(1)) + Std.at(1));
-              PhysMap[2]  += ( 2 * nnx[5] - 1 ) * (std::abs(xf.at(2)) + Std.at(2));
-              PhysMap[3]  += ( 2 * nnx[0] - 1 ) * (std::abs(xf.at(3)) + Std.at(3));
-              break;
+          case 1: // s = sbar
+            PhysMap[-3] += ( 2 * nnx[0] - 1 ) * (std::abs(xf.at(3)) + Std.at(3));
+            PhysMap[-2] += ( 2 * nnx[1] - 1 ) * (std::abs(xf.at(-2)) + Std.at(-2));
+            PhysMap[-1] += ( 2 * nnx[2] - 1 ) * (std::abs(xf.at(-1)) + Std.at(-1));
+            PhysMap[0]  += ( 2 * nnx[3] - 1 ) * (std::abs(xf.at(21)) + Std.at(21));
+            PhysMap[1]  += ( 2 * nnx[4] - 1 ) * (std::abs(xf.at(1)) + Std.at(1));
+            PhysMap[2]  += ( 2 * nnx[5] - 1 ) * (std::abs(xf.at(2)) + Std.at(2));
+            PhysMap[3]  += ( 2 * nnx[0] - 1 ) * (std::abs(xf.at(3)) + Std.at(3));
+            break;
 
-            default:
-              std::cerr << "NNAD : Unknown flavour map" << std::endl;
-              exit(-1);
+          default:
+            std::cerr << "NNAD : Unknown flavour map" << std::endl;
+            exit(-1);
           }
 
         // Rotate into the QCD evolution basis and return
