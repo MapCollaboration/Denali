@@ -1,0 +1,58 @@
+# CMake
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+run/CMakeFiles/
+run/cmake_install.cmake
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# LaTex
+*.aux
+*.idx
+*.log
+*.pdf
+
+# Jupyter
+.ipynb_checkpoints
+__pycache__
+
+# Build, config & version
+build
+bin/Denali-config
+inc/Denali/version.h
+
+# LHAPDF sets
+LHAPDFSet
+
+# MacOS
+.DS_Store

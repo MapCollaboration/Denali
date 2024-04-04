@@ -1,0 +1,94 @@
+dependent_variables:
+- header: {title: "COMPASS $Ka^-$ A1d"}
+  qualifiers:
+  - {name: process, value: pSIDIS}
+  - {name: observable, value: A1H}
+  - {name: target_isoscalarity, value: 0.5}
+  - {name: prefactor, value: 1}
+  - {name: Vs, value:  19.0 , units: GeV}
+  - {name: Q, low: 1, high: 7.456540753, integrate: false}
+  - {name: x, low: 0.004, high: 0.7, integrate: false}
+  - {name: z, low: 0.2, high: 0.85, integrate: true}
+  - {name: PS_reduction, W: 0, ymin: 0.1, ymax: 0.9}
+  - {name: hadron, value: KA}
+  - {name: charge, value: -1}
+  values:
+  - errors:
+    - {label: unc, value: 0.03311}
+    value: -0.08400
+  - errors:
+    - {label: unc, value: 0.01931}
+    value: 0.01400
+  - errors:
+    - {label: unc, value: 0.01709}
+    value: -0.00400
+  - errors:
+    - {label: unc, value: 0.02786}
+    value: 0.02400
+  - errors:
+    - {label: unc, value: 0.03770}
+    value: 0.01100
+  - errors:
+    - {label: unc, value: 0.03808}
+    value: -0.05900
+  - errors:
+    - {label: unc, value: 0.04438}
+    value: 0.01300
+  - errors:
+    - {label: unc, value: 0.07001}
+    value: -0.01000
+  - errors:
+    - {label: unc, value: 0.11086}
+    value: -0.00200
+  - errors:
+    - {label: unc, value: 0.12702}
+    value: -0.02300
+independent_variables:
+- header: {name: "z"}
+  values:
+  - {high: 0.85000, low: 0.20000, value: 0.52500}
+  - {high: 0.85000, low: 0.20000, value: 0.52500}
+  - {high: 0.85000, low: 0.20000, value: 0.52500}
+  - {high: 0.85000, low: 0.20000, value: 0.52500}
+  - {high: 0.85000, low: 0.20000, value: 0.52500}
+  - {high: 0.85000, low: 0.20000, value: 0.52500}
+  - {high: 0.85000, low: 0.20000, value: 0.52500}
+  - {high: 0.85000, low: 0.20000, value: 0.52500}
+  - {high: 0.85000, low: 0.20000, value: 0.52500}
+  - {high: 0.85000, low: 0.20000, value: 0.52500}
+- header: {name: "x"}
+  values:
+  - {value: 0.00520}
+  - {value: 0.00790}
+  - {value: 0.01410}
+  - {value: 0.02440}
+  - {value: 0.03460}
+  - {value: 0.04870}
+  - {value: 0.07630}
+  - {value: 0.12100}
+  - {value: 0.17100}
+  - {value: 0.24000}
+- header: {name: "y"}
+  values:
+  - {high: 0.90000, low: 0.10000, value: 0.50000}
+  - {high: 0.90000, low: 0.10000, value: 0.50000}
+  - {high: 0.90000, low: 0.10000, value: 0.50000}
+  - {high: 0.90000, low: 0.10000, value: 0.50000}
+  - {high: 0.90000, low: 0.10000, value: 0.50000}
+  - {high: 0.90000, low: 0.10000, value: 0.50000}
+  - {high: 0.90000, low: 0.10000, value: 0.50000}
+  - {high: 0.90000, low: 0.10000, value: 0.50000}
+  - {high: 0.90000, low: 0.10000, value: 0.50000}
+  - {high: 0.90000, low: 0.10000, value: 0.50000}
+- header: {name: "Q2"}
+  values:
+  - {value: 1.16000}
+  - {value: 1.42000}
+  - {value: 2.03000}
+  - {value: 3.19000}
+  - {value: 4.43000}
+  - {value: 6.10000}
+  - {value: 9.26000}
+  - {value: 14.90000}
+  - {value: 22.40000}
+  - {value: 32.80000}

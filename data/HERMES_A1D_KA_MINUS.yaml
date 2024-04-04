@@ -1,0 +1,87 @@
+dependent_variables:
+- header: {title: "HERMES $KA^-$ A1d"}
+  qualifiers:
+  - {name: process, value: pSIDIS}
+  - {name: observable, value: A1H}
+  - {name: target_isoscalarity, value: 0.5}
+  - {name: prefactor, value: 1}
+  - {name: Vs, value:  7.236 , units: GeV}
+  - {name: Q, low: 1, high: 3.24, integrate: false}
+  - {name: x, low: 0.033, high: 0.448, integrate: false}
+  - {name: z, low: 0.383, high: 0.510, integrate: false}
+  - {name: PS_reduction, W: 3.16, ymin: 0.1, ymax: 0.85}
+  - {name: hadron, value: KA}
+  - {name: charge, value: -1}
+  values:
+  - errors:
+    - {label: unc, value: 0.06347}
+    value: -0.04710
+  - errors:
+    - {label: unc, value: 0.07065}
+    value: 0.03120
+  - errors:
+    - {label: unc, value: 0.07501}
+    value: 0.00970
+  - errors:
+    - {label: unc, value: 0.08625}
+    value: -0.05540
+  - errors:
+    - {label: unc, value: 0.08745}
+    value: 0.02920
+  - errors:
+    - {label: unc, value: 0.10338}
+    value: 0.07220
+  - errors:
+    - {label: unc, value: 0.14469}
+    value: 0.08710
+  - errors:
+    - {label: unc, value: 0.34838}
+    value: -0.25040
+  - errors:
+    - {label: unc, value: 0.71254}
+    value: 1.45850
+independent_variables:
+- header: {name: "z"}
+  values:
+  - {value: 0.38300}
+  - {value: 0.42400}
+  - {value: 0.45700}
+  - {value: 0.48400}
+  - {value: 0.48900}
+  - {value: 0.49300}
+  - {value: 0.50300}
+  - {value: 0.51600}
+  - {value: 0.51000}
+- header: {name: "x"}
+  values:
+  - {value: 0.03300}
+  - {value: 0.04800}
+  - {value: 0.06500}
+  - {value: 0.08600}
+  - {value: 0.11800}
+  - {value: 0.16500}
+  - {value: 0.23800}
+  - {value: 0.33600}
+  - {value: 0.44800}
+- header: {name: "y"}
+  values:
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+- header: {name: "Q2"}
+  values:
+  - {value: 1.22000}
+  - {value: 1.50000}
+  - {value: 1.86000}
+  - {value: 2.33000}
+  - {value: 3.08000}
+  - {value: 4.23000}
+  - {value: 5.81000}
+  - {value: 7.76000}
+  - {value: 10.20000}

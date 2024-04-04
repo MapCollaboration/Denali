@@ -1,0 +1,18 @@
+dependent_variables:
+- header: {title: "Baryon octet decay constants"}
+  qualifiers:
+  - {name: process, value: Sum_rules}
+  - {name: observable, value: a3}
+  - {name: Vs, value:  58.056, units: GeV}
+  - {name: x, low:  1.e-5 , high:  1, integrate: true}
+  values:
+  - errors:
+    - {label: unc, value: 0.0013}
+    value: 1.2756
+independent_variables:
+- header: {name: "x"}
+  values:
+  - {high: 1, low: 0.00001, value: 0.5}
+- header: {name: "Q2"}
+  values:
+  - {value: 1.}

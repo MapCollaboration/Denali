@@ -1,0 +1,168 @@
+dependent_variables:
+- header: {title: "HERMES $Pi^+$ A1p (2018)"}
+  qualifiers:
+  - {name: process, value: pSIDIS}
+  - {name: observable, value: A1H}
+  - {name: target_isoscalarity, value: 1.0}
+  - {name: prefactor, value: 1}
+  - {name: Vs, value:  7.236 , units: GeV}
+  - {name: Q, low: 1, high: 3.24, integrate: false}
+  - {name: x, low: 0.033, high: 0.449, integrate: false}
+  - {name: z, low: 0.36, high: 0.53, integrate: false}
+  - {name: PS_reduction, W: 3.16, ymin: 0.1, ymax: 0.85}
+  - {name: hadron, value: PI}
+  - {name: charge, value: 1}
+  values:
+  - errors:
+    - {label: unc, value: 0.03200}
+    - {label: add, value: 0.00000}
+    - {label: add, value: 0.00001}
+    - {label: add, value: -0.00014}
+    - {label: add, value: -0.04856}
+    - {label: add, value: 0.01728}
+    - {label: add, value: -0.00638}
+    - {label: add, value: 0.00009}
+    - {label: add, value: 0.00087}
+    - {label: add, value: 0.00007}
+    value: 0.07700
+  - errors:
+    - {label: unc, value: 0.03700}
+    - {label: add, value: 0.00000}
+    - {label: add, value: 0.00002}
+    - {label: add, value: -0.00076}
+    - {label: add, value: -0.00871}
+    - {label: add, value: -0.04210}
+    - {label: add, value: 0.03754}
+    - {label: add, value: 0.00036}
+    - {label: add, value: -0.00265}
+    - {label: add, value: 0.00073}
+    value: 0.10500
+  - errors:
+    - {label: unc, value: 0.04000}
+    - {label: add, value: -0.00001}
+    - {label: add, value: -0.00002}
+    - {label: add, value: 0.00207}
+    - {label: add, value: -0.00237}
+    - {label: add, value: -0.02443}
+    - {label: add, value: -0.04567}
+    - {label: add, value: -0.00086}
+    - {label: add, value: 0.02205}
+    - {label: add, value: -0.00271}
+    value: 0.12400
+  - errors:
+    - {label: unc, value: 0.04700}
+    - {label: add, value: -0.00001}
+    - {label: add, value: 0.00011}
+    - {label: add, value: -0.01749}
+    - {label: add, value: -0.00031}
+    - {label: add, value: -0.00280}
+    - {label: add, value: -0.00676}
+    - {label: add, value: 0.00622}
+    - {label: add, value: -0.05000}
+    - {label: add, value: 0.01265}
+    value: 0.21700
+  - errors:
+    - {label: unc, value: 0.04700}
+    - {label: add, value: -0.00003}
+    - {label: add, value: -0.00077}
+    - {label: add, value: 0.05575}
+    - {label: add, value: -0.00004}
+    - {label: add, value: -0.00027}
+    - {label: add, value: -0.00054}
+    - {label: add, value: -0.01052}
+    - {label: add, value: -0.00642}
+    - {label: add, value: -0.00624}
+    value: 0.38300
+  - errors:
+    - {label: unc, value: 0.05400}
+    - {label: add, value: 0.00041}
+    - {label: add, value: 0.00239}
+    - {label: add, value: -0.02564}
+    - {label: add, value: -0.00004}
+    - {label: add, value: -0.00020}
+    - {label: add, value: -0.00036}
+    - {label: add, value: -0.03342}
+    - {label: add, value: -0.00637}
+    - {label: add, value: -0.04081}
+    value: 0.27100
+  - errors:
+    - {label: unc, value: 0.06900}
+    - {label: add, value: -0.00206}
+    - {label: add, value: -0.01660}
+    - {label: add, value: 0.00716}
+    - {label: add, value: -0.00001}
+    - {label: add, value: -0.00007}
+    - {label: add, value: -0.00012}
+    - {label: add, value: 0.05390}
+    - {label: add, value: -0.00275}
+    - {label: add, value: -0.02953}
+    value: 0.26500
+  - errors:
+    - {label: unc, value: 0.14700}
+    - {label: add, value: 0.01689}
+    - {label: add, value: 0.05653}
+    - {label: add, value: 0.00101}
+    - {label: add, value: -0.00000}
+    - {label: add, value: -0.00000}
+    - {label: add, value: -0.00001}
+    - {label: add, value: 0.00357}
+    - {label: add, value: -0.00013}
+    - {label: add, value: -0.00148}
+    value: 0.57500
+  - errors:
+    - {label: unc, value: 0.35200}
+    - {label: add, value: -0.06132}
+    - {label: add, value: 0.00464}
+    - {label: add, value: 0.00005}
+    - {label: add, value: -0.00000}
+    - {label: add, value: -0.00000}
+    - {label: add, value: -0.00000}
+    - {label: add, value: 0.00016}
+    - {label: add, value: -0.00001}
+    - {label: add, value: -0.00008}
+    value: 1.05700
+independent_variables:
+- header: {name: "z"}
+  values:
+  - {value: 0.36000}
+  - {value: 0.42000}
+  - {value: 0.43000}
+  - {value: 0.47000}
+  - {value: 0.49000}
+  - {value: 0.51000}
+  - {value: 0.52000}
+  - {value: 0.53000}
+  - {value: 0.53000}
+- header: {name: "x"}
+  values:
+  - {value: 0.03300}
+  - {value: 0.04700}
+  - {value: 0.06500}
+  - {value: 0.08700}
+  - {value: 0.11800}
+  - {value: 0.16600}
+  - {value: 0.23800}
+  - {value: 0.33800}
+  - {value: 0.44900}
+- header: {name: "y"}
+  values:
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+  - {high: 0.85000, low: 0.10000, value: 0.47500}
+- header: {name: "Q2"}
+  values:
+  - {value: 1.22000}
+  - {value: 1.50000}
+  - {value: 1.83000}
+  - {value: 2.27000}
+  - {value: 2.91000}
+  - {value: 3.92000}
+  - {value: 5.46000}
+  - {value: 7.57000}
+  - {value: 10.17000}
