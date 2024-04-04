@@ -72,7 +72,7 @@ The relevant source code to perform a fit and analyse the results can be found i
     ```
     will compute the predictions using the `MySetForPolPDFs` set that has to be either in the `fit/` folder or in the LHAPDF data directory.
 
-The results produced by the codes described above can finally be visualised by copying  into the `fit/` folder and running the template `jupyter` notebook [`AnalysePredictions.ipynb`](analysis/Analysis_template/AnalysePredictions.ipynb) that is in the `analysis/` folder. This is exactly how the fit of polarised PDFs documented in the reference below has been obtained and any user should be able to reproduce it by following the steps above. For reference, we have linked the folder of the baseline fits [here](Results) along with the corresponding `jupyter` [notebook](Results/231003_nnlo_baseline/Analysis_template/AnalysePredictions.ipynb).
+The results produced by the codes described above can finally be visualised by copying  into the `fit/` folder and running the template `jupyter` notebook [`AnalysePredictions.ipynb`](analysis/Analysis_template/AnalysePredictions.ipynb) that is in the `analysis/` folder. This is exactly how the fit of polarised PDFs documented in the reference below has been obtained and any user should be able to reproduce it by following the steps above. For reference, we have linked the folder of the baseline fits [here](Results) along with the corresponding `jupyter` notebooks.
 
 ## Reference
 
