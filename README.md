@@ -87,5 +87,6 @@ The baseline fits in the LHAPDF format produced with this publications can be fo
 For additional information or questions, contact us using the email adresses below:
 
 - Valerio Bertone: valerio.bertone@cern.ch
-- Emanuele R. Nocera: emanueleroberto.nocera@unito.it
 - Amedeo Chiefa: amedeo.chiefa@ed.ac.uk
+- Emanuele R. Nocera: emanueleroberto.nocera@unito.it
+
