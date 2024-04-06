@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10933177.svg)](https://doi.org/10.5281/zenodo.10933177)
+
 ![alt text](resources/Denali.jpg "Denali")
 
 # Denali
