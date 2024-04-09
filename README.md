@@ -80,9 +80,9 @@ The results produced by the codes described above can finally be visualised by c
 
 If you use this code or the PDF sets listed below, please refer to and cite the following reference:
 
-- Valerio Bertone, Amedeo Chiefa, Emanuele R. Nocera, "Helicity-dependent parton distribution functions at next-to-next-to-leading order accuracy from inclusive and semi-inclusive deep-inelastic scattering data", arXiv:2404.xxxxx
+- Valerio Bertone, Amedeo Chiefa, Emanuele R. Nocera, "Helicity-dependent parton distribution functions at next-to-next-to-leading order accuracy from inclusive and semi-inclusive deep-inelastic scattering data", arXiv:2404.04712.
 
-The baseline fits in the LHAPDF format produced with this publications can be found in [this](PDFSets/2404.xxxxx) folder. The additional variant PDF sets discussed in this paper are also available from the authors upon request.
+The baseline fits in the LHAPDF format produced with this publications can be found in [this](PDFSets/2404.04712) folder. The additional variant PDF sets discussed in this paper are also available from the authors upon request.
 
 ## Contacts
 
